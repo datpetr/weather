@@ -5,8 +5,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('test')
-
-
-def south(request):
-    pass
+    return render(request, 'main.html')
